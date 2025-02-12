@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoCleanArchitecture.Domai
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoCleanArchitecture.Infrastructure", "TodoCleanArchitecture.Infrastructure\TodoCleanArchitecture.Infrastructure.csproj", "{08D803B9-13B3-439D-A2D6-E1CD7C78888F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoCleanArchitecture.Api", "TodoCleanArchitecture.Api\TodoCleanArchitecture.Api.csproj", "{F5A6C5EF-A70B-4751-9033-F7B29ADB0841}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoCleanArchitecture.Api", "TodoCleanArchitecture.Api\TodoCleanArchitecture.Api.csproj", "{9AADFB73-FEE5-462F-B7EE-61246CE1540F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,9 +26,9 @@ Global
 		{08D803B9-13B3-439D-A2D6-E1CD7C78888F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08D803B9-13B3-439D-A2D6-E1CD7C78888F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08D803B9-13B3-439D-A2D6-E1CD7C78888F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F5A6C5EF-A70B-4751-9033-F7B29ADB0841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5A6C5EF-A70B-4751-9033-F7B29ADB0841}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F5A6C5EF-A70B-4751-9033-F7B29ADB0841}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F5A6C5EF-A70B-4751-9033-F7B29ADB0841}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AADFB73-FEE5-462F-B7EE-61246CE1540F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AADFB73-FEE5-462F-B7EE-61246CE1540F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AADFB73-FEE5-462F-B7EE-61246CE1540F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AADFB73-FEE5-462F-B7EE-61246CE1540F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
