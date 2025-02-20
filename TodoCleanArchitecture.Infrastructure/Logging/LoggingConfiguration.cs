@@ -13,7 +13,7 @@ public class LoggingConfiguration
             .Enrich.WithProperty("ApplicationName", env.ApplicationName)
             .Enrich.WithProperty("Environment", env.EnvironmentName); 
 
-        configuration.WriteTo.File(new JsonFormatter(), " /TodoCleanArchitectureLog-.json",rollingInterval: RollingInterval.Day).MinimumLevel.Warning();
+        configuration.WriteTo.File(new JsonFormatter(), " /logs/TodoCleanArchitectureLog-.json",rollingInterval: RollingInterval.Day).MinimumLevel.Warning();
         
     };
 }
