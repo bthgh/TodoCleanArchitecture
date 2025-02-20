@@ -7,12 +7,33 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Asp.Versioning.Http" Version="8.1.0" />
+        <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.1"/>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Serilog" Version="4.2.1-dev-02340" />
+        <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\TodoCleanArchitecture.Application\TodoCleanArchitecture.Application.csproj" />
       <ProjectReference Include="..\TodoCleanArchitecture.Infrastructure\TodoCleanArchitecture.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Endpoints\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove=" \TodoCleanArchitectureLog-20250218.json" />
+      <_ContentIncludedByDefault Remove=" \TodoCleanArchitectureLog-20250220.json" />
     </ItemGroup>
 
 </Project>

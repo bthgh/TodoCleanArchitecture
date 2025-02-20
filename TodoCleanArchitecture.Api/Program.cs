@@ -1,10 +1,21 @@
+using Serilog;
+using TodoCleanArchitecture.Api;
+using TodoCleanArchitecture.Api.Middlewares;
+using TodoCleanArchitecture.Application;
+using TodoCleanArchitecture.Infrastructure;
+using TodoCleanArchitecture.Infrastructure.Identity;
+using TodoCleanArchitecture.Infrastructure.Logging;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Host.UseSerilog(LoggingConfiguration.ConfigureLogger);
 
-builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+// Add services to the container.
+builder.Services.AddApplicationServices()
+    .AddInfrastructureServices(builder.Configuration)
+    .AddApiServices(builder.Configuration);
+
+
 
 var app = builder.Build();
 
@@ -12,12 +23,15 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
-}
+} 
+
+app.UseCors("AllowCORSUrls");
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
-
-app.MapControllers();
+  
+app.MapControllers(); 
 
 app.Run();
