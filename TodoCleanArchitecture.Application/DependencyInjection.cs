@@ -1,10 +1,8 @@
 using System.Reflection;
-using AutoMapper;
-using BrizonForum.Application.Models.Settings;
+using AutoMapper; 
 using FluentValidation;
 using MediatR;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
+using Microsoft.Extensions.DependencyInjection; 
 using TodoCleanArchitecture.Application.Behaviors;
 using TodoCleanArchitecture.Application.MappingProfiles;
 
