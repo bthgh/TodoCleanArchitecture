@@ -39,6 +39,7 @@ public static class DependencyInjection
         //Register Identity
         services.AddIdentity<ApplicationUser, IdentityRole>()
             .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddSignInManager()
             .AddDefaultTokenProviders(); 
         
         services.AddAuthentication(options =>
