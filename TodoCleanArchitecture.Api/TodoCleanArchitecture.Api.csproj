@@ -27,13 +27,4 @@
       <ProjectReference Include="..\TodoCleanArchitecture.Infrastructure\TodoCleanArchitecture.Infrastructure.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Endpoints\" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <_ContentIncludedByDefault Remove=" \TodoCleanArchitectureLog-20250218.json" />
-      <_ContentIncludedByDefault Remove=" \TodoCleanArchitectureLog-20250220.json" />
-    </ItemGroup>
-
 </Project>
